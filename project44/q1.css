@@ -1,0 +1,31 @@
+html, body, h1, h2, div, footer, header, img { margin:0; padding:0;}
+body { font-family: tahoma; background: url(images/body-bg.png)}
+#header {   display: flex;  justify-content: space-between; height: 75px;  width: 800px;  margin:0 auto ;  color: white; }
+#header h1 { line-height: 75px; }
+#header ul { list-style: none; margin:0; padding:0;}
+#header ul li {  line-height: 75px; display: inline-block; width: 120px; color: #aaa; text-align: center;}
+#header ul li:hover { color: #fff; background: black;}
+#header-wrapper { background: #333;}
+
+#banner { width: 800px; height: 250px; background: url(images/banner.jpg) no-repeat; margin: 20px auto; position: relative; }
+#banner p { font-size: 80px; color: #fff ; background: #000; opacity: 0.4; position: absolute; top: 50px; left: 230px;
+            padding: 30px; margin: 0;}
+#column { width: 800px; margin: 0 auto; display:flex; justify-content: space-between;}
+#column h1 { font-size: 24px;}
+#button { width: 100px; padding: 15px; color: white; background: #333; text-align: center;}
+#left {  width: 400px; }
+#left h1 { padding-left: 60px; background: url(images/gallery.gif) no-repeat; line-height: 50px;}
+#right {  width: 350px;}
+#right div { border: 1px solid #bbb; background: #fff; padding: 30px; margin: 30px;}
+#column p { line-height: 20px; font-size: 14px; margin-top: 20px; color: #999;}
+
+#footer { margin-top: 30px;  background: url(images/bg03.png) ; }
+#footer div { width: 800px; margin: 20px auto; padding: 20px 0; text-align: center;}
+#searchBar { height: 40px; width: 500px; border: 1px solid black; border-radius: 20px; padding: 0 20px; font-size: 20px; background: #fff url(images/magnifier.jpg) no-repeat right center;            
+}
+/* MOBILE PART */
+@media screen and ( max-width: 830px) {
+    #header ul, #banner p, #right { display: none;}
+    #header, #banner, #column, #footer div, #left { width: 100%;}
+    #searchBar { width: 60%;}  
+}
